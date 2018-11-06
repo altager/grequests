@@ -120,6 +120,9 @@ type RequestOptions struct {
 	// globally by modifying the `RedirectLimit` variable.
 	RedirectLimit int
 
+	// Set false to check response before redirect
+	AllowRedirect true
+
 	// RequestBody allows you to put anything matching an `io.Reader` into the request
 	// this option will take precedence over any other request option specified
 	RequestBody io.Reader
